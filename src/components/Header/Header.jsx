@@ -1,4 +1,5 @@
 import React from "react";
+import HeaderMobile from "./HeaderMobile";
 
 export const Header = () => {
   return (
@@ -142,7 +143,7 @@ export const Header = () => {
             <input
               type="text"
               className="search_input rounded_sm"
-              placeholder="Tìm tên phim, diễn viên..."
+              placeholder="Tìm kiếm..."
               name="keyword"
             />
             <button className="search_icon" type="submit">
@@ -165,39 +166,7 @@ export const Header = () => {
         </div>
       </div>
       {/* menu mobile */}
-      <div id="menu_mobile" className="menu_mobile">
-        <ul>
-          <li className="menu_item_mobile">
-            <a href="#">Trang chủ</a>
-          </li>
-          <li className="menu_item_mobile">
-            <a href="#">Đồ nam</a>
-          </li>
-          <li className="menu_item_mobile">
-            <a href="#">Đồ nữ</a>
-          </li>
-          <li className="menu_item_mobile submenu_click">
-            <a>Cửa hàng</a>
-            <ul className="sub_menu_mobile hidden">
-              <li>
-                <a href="#">Phim hành động</a>
-              </li>
-              <li>
-                <a href="#">Phim cổ trang</a>
-              </li>
-              <li>
-                <a href="#">Phim tình cảm</a>
-              </li>
-              <li>
-                <a href="#">Phim hài</a>
-              </li>
-            </ul>
-          </li>
-          <li className="menu_item_mobile">
-            <a href="#">Giới thiệu</a>
-          </li>
-        </ul>
-      </div>
+      <HeaderMobile />
       {/* end menu mobile */}
     </header>
   );

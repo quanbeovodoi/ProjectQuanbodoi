@@ -1,0 +1,35 @@
+.sidebar{
+    margin: 4rem 0;
+    width: 80rem;
+    height: 100%;
+    background: #333;
+    border-radius: 1rem;
+    transition: inherit;
+    box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.329);
+    .menuSideBar{
+        ul{
+            transition: inherit;
+            list-style-type: none;
+            li{
+                transition: inherit;
+                a{
+                    display: block;
+                    width: 90%;
+                    font-size: 1.2rem;
+                    padding: 1rem;
+                    color: #fff;
+                    margin: 1rem auto;
+                    transition: inherit;
+                    border-radius: 1rem;
+                    &:hover{
+                        transform: scaleY(1.1);
+                        background:lightcoral;
+                    }
+                }
+            }
+        }
+    }
+}
+.product_items{
+    gap: 2rem;
+}

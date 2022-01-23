@@ -62,7 +62,7 @@ a {
     margin-left: auto;
     padding-right: 1rem;
     padding-left: 1rem;
-    max-width: 1400px;
+    max-width: 1600px;
     @include screen-xxl{
         max-width: 1140px;
     }
@@ -193,7 +193,7 @@ a {
     }
 }
 .main{
-    padding-top: 170px;
+    // padding-top: 170px;
     height: 100%;
     background: #ffcaca;
     @include screen-lg{

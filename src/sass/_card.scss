@@ -166,3 +166,20 @@
         border-radius: inherit;
     }
 }
+.more{
+    width: 100%;
+    a{
+        text-align: center;
+        width: 8rem;
+        padding: 1rem;
+        background:#333;
+        color: #fff;
+        display: block;
+        margin: 0 auto;
+        border-radius: 1rem;
+        &:hover{
+            box-shadow: 1px 2px 4px 5px hsla(0, 100%, 57%, 0.205);
+            transform: scale(1.2); 
+        }
+    }
+}

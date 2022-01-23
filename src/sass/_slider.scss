@@ -30,7 +30,9 @@
 }
 .slide{
     &_q{
-        padding: 0;
+        background: #ffcaca;
+        position: relative;
+        padding-top: 6rem;
         margin: 0 auto;
         img{
             width: inherit;
@@ -43,11 +45,51 @@
         width: 100%;
     }
     &_viewer {
+        position: relative;
+        max-width: 1920px;
+        margin: 0 auto;
         height: 100%;
         box-shadow: 1px 1px 5px 2px rgba(51, 51, 51, 0.342);
     }
     &_ele{
         width: 100%;
         height: 37rem;
+        position: relative;
+        .text{
+            position: absolute;
+            padding: 1rem;
+            box-shadow: 1px 1px 5px 2px rgba(51, 51, 51, 0.342);
+            top: 60%;
+            left: 2.6rem;
+            background: rgba(255, 83, 83, 0.253);
+            color: #fff;
+        }
     }
+    &_content{
+        position: absolute;
+        bottom: 10%;
+        left: 2rem;
+    }
+}
+.btn{
+    &_next,&_pre{
+        color: #fff;
+        background: rgba(0, 0, 0, 0.315);
+        cursor: pointer;
+        height: 3rem;
+        width: 3rem;
+        border-radius: 1rem;
+        transition: all 0.25s ease-in-out;
+        &:hover{
+            transform: scale(1.5);
+            background: #fff;
+            color: violet;
+        }
+    }
+}
+.buttonSlide_area{
+    width: 8rem;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 1rem;
 }
