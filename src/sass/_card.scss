@@ -16,10 +16,10 @@
 }
 .card_grid{
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    @include screen-lg{
+    @include screen-xxl{
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
-    @include screen-md{
+    @include screen-xl{
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 2rem;
     }
@@ -79,10 +79,12 @@
     }
     &_cross{
         text-decoration: line-through;
+        padding-right: 0.5rem;
     }
     &_price{
         font-size: 1.1rem;
         font-weight: bolder;
+        padding-right: 0.5rem;
     }
     &_overlays{
         position: absolute;
@@ -132,6 +134,11 @@
 .cate_group{
     padding: 1rem 0;
     margin: 0 -1rem;
+    .cols_2{
+        @include screen-md{
+            grid-column: 1 / span 1;
+        }
+    }
 }
 .cate_box{
     box-shadow: 1px 2px 4px 1px rgba(61, 61, 61, 0.329);
@@ -143,7 +150,7 @@
     overflow: hidden;
     &:hover{
         box-shadow: 1px 2px 4px 5px hsla(0, 100%, 57%, 0.205);
-        transform: scale(1.05); 
+        transform: scale(1.01); 
         z-index: 1;
         & img{
             transform: scale(1.5);
@@ -157,7 +164,7 @@
         text-align: center;
         line-height: 12rem;
         position: absolute;
-        font-size: 5rem;
+        font-size: 3rem;
     }
     img{
         width: 100%;

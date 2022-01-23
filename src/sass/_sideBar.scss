@@ -1,6 +1,17 @@
 .sidebar{
     margin: 4rem 0;
     width: 80rem;
+    @include screen-xl{
+        text-align: center;
+        width:  50rem;
+    }
+    @include screen-lg{
+        width:  26rem;
+    }
+    @include screen-md{
+        width: 100%;
+        margin: 2rem 0 0;
+    }
     height: 100%;
     background: #333;
     border-radius: 1rem;
@@ -32,4 +43,8 @@
 }
 .product_items{
     gap: 2rem;
+    @include screen-md{
+        flex-direction: column;
+        gap: 0;
+    }
 }

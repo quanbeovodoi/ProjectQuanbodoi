@@ -15,9 +15,11 @@
 }
 html {
     scroll-behavior: smooth;
+    font-family: 'Pacifico', cursive;
 }
 body{
-    min-width: 489px;
+    background: #ffcaca;
+    min-width: 539px;
 }
 header{
     position: fixed;
@@ -196,8 +198,9 @@ a {
     // padding-top: 170px;
     height: 100%;
     background: #ffcaca;
+    padding-top: 2rem;
     @include screen-lg{
-        padding-top: 128px;
+        padding-top: 2rem;
     }
 }
 .box{
@@ -228,5 +231,46 @@ a {
         background-size: cover;
         border-radius: 1rem;
         box-shadow: 1px 1px 8px 2px #33333387;
+    }
+}
+
+.footer{
+    border-top: 1rem solid rgb(253, 15, 15);
+    padding-top: 3rem;
+    margin-top: 1rem;
+    background: #000;
+    color: aliceblue;
+    font-size: 2rem;
+    &_grid{
+        .col{
+            text-align: center;
+            height: 100%;
+        }
+        margin: 0 auto;
+        max-width: 1920px;
+        grid-template-columns: 20% 20% 20% 40%;
+        @include screen-lg{
+            grid-template-columns: 50% 50%;
+        }
+        ul{
+            padding: 1rem;
+            list-style-type: none;
+            li{
+                padding-top: 1rem;
+                &.title{
+                    color: #ffcaca;
+                    text-transform: uppercase;
+                }
+                .iconLinks{
+                    display: inline-block;
+                    padding: 0 1rem 0 0;
+                }
+                a{
+                    &:hover{
+                        color: #ffcaca;
+                    }
+                }
+            }
+        }
     }
 }
