@@ -1,13 +1,17 @@
 import React, { useState } from "react";
 
 const HeaderMobile = (...params) => {
+  const { index,...props } = params;
   const [hidden, setHidden] = useState(true);
-  // if(this.isOpen == true){
-  //   console.log('OPEN')
-  // }
+  const [Open,setOpen] = useState(false);
+  // console.log(props);
+  if(props[0].isOpen == true && index=='0'){
+    setHidden(!hidden);
+    index='1';
+  }
   return (
     <div>
-      <div id="menu_mobile" className="menu_mobile">
+      <div id="menu_mobile" className={!hidden ? 'menu_mobile': 'menu_mobile active'}>
         <ul>
           <li className="menu_item_mobile">
             <a href="#">Trang chủ</a>
@@ -18,9 +22,10 @@ const HeaderMobile = (...params) => {
           <li className="menu_item_mobile">
             <a href="#">Đồ nữ</a>
           </li>
-          <li className="menu_item_mobile submenu_click">
+          <li className="menu_item_mobile submenu_click" onClick={()=>setOpen(!Open)}>
             <a>Cửa hàng</a>
-            <ul className="sub_menu_mobile hidden">
+            {Open && (
+              <ul className="sub_menu_mobile">
               <li>
                 <a href="#">Áo khoác</a>
               </li>
@@ -34,6 +39,7 @@ const HeaderMobile = (...params) => {
                 <a href="#">Tất chân</a>
               </li>
             </ul>
+            )}
           </li>
           <li className="menu_item_mobile">
             <a href="#">Giới thiệu</a>

@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="footer">
         <div className="grid footer_grid">
           <div className="col col_1">
-                <img src="./image/logo.png" width={100 + "%"} />
+                <img src="/image/logo.png" width={100 + "%"} />
           </div>
           <div className="col col_2">
             <ul>

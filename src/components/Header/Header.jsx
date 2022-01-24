@@ -9,7 +9,7 @@ export const Header = () => {
         <div className="container flex items-center justify-between">
           {/* logo */}
           <a href="#">
-            <img className="img-logo" src="image/logo.png" />
+            <img className="img-logo" src="/image/logo.png" />
           </a>
           {/* end logo */}
           {/* menu */}
@@ -167,7 +167,7 @@ export const Header = () => {
         </div>
       </div>
       {/* menu mobile */}
-      {Open && <HeaderMobile isOpen={Open} />}
+      {Open && <HeaderMobile index={'0'} isOpen={Open} />}
       {/* end menu mobile */}
     </header>
   );

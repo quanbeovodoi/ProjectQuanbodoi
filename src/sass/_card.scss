@@ -64,7 +64,7 @@
     transition: all 0.2s ease-in-out;
     box-shadow: 1px 1px 5px 2px rgba(51, 51, 51, 0.541);
     img{
-        transition: all 0.5s ease-in;
+        transition: all 0.3s ease-in;
     }
     &:hover{
         img{
@@ -127,7 +127,7 @@
         }
         &:hover{
             box-shadow: 1px 2px 4px 1px rgba(255, 255, 255, 0.329);
-            transform: scale(0.9);
+            transform: scale(0.87);
         }
     }
 }
