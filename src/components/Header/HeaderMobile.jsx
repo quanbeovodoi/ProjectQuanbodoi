@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 
-const HeaderMobile = () => {
+const HeaderMobile = (...params) => {
+  const [hidden, setHidden] = useState(true);
+  // if(this.isOpen == true){
+  //   console.log('OPEN')
+  // }
   return (
     <div>
       <div id="menu_mobile" className="menu_mobile">

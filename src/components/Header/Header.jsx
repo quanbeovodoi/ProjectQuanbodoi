@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import HeaderMobile from "./HeaderMobile";
 
 export const Header = () => {
+  const [Open,setOpen] = useState(false);
   return (
     <header className="header">
       <div className="header_wrap">
@@ -130,7 +131,7 @@ export const Header = () => {
               <div className="icon_title">Account</div>
               <span className="icon_number flex">8</span>
             </a>
-            <div className="menu_show">
+            <div className="menu_show" onClick={()=>setOpen(!Open)}>
               <div className="menu_icon" id="humber">
                 <div className="menu_humber" />
               </div>
@@ -166,7 +167,7 @@ export const Header = () => {
         </div>
       </div>
       {/* menu mobile */}
-      <HeaderMobile />
+      {Open && <HeaderMobile isOpen={Open} />}
       {/* end menu mobile */}
     </header>
   );

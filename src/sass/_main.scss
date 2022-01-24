@@ -19,7 +19,7 @@ html {
 }
 body{
     background: #ffcaca;
-    min-width: 539px;
+    min-width: 450px;
 }
 header{
     position: fixed;
@@ -198,10 +198,6 @@ a {
     // padding-top: 170px;
     height: 100%;
     background: #ffcaca;
-    padding-top: 2rem;
-    @include screen-lg{
-        padding-top: 2rem;
-    }
 }
 .box{
     &_sm{

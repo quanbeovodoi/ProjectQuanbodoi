@@ -22,7 +22,7 @@ export const SlideImg = () => {
     customeSlider.current.slickPrev();
   };
   const custom_set = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     autoplay: true,
