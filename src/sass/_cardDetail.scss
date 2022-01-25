@@ -1,0 +1,76 @@
+.prdDetails{
+    grid-template-columns: auto auto;
+    gap: 10rem;
+    padding: 3rem;
+    width: fit-content;
+    margin: 0 auto;
+    &Dot,img{
+        object-fit: cover;
+        border-radius: 1rem;
+        width: inherit;
+        height: inherit;
+    }
+    .slick-dots.slick-thumb{
+        display: grid !important;
+        gap: 1rem;
+        grid-template-columns: auto auto auto auto;
+        li{
+            box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.301);
+            border-radius: 1rem;
+            &.slick-active{
+                box-shadow: 0px 0px 5px 1px rgba(255, 0, 0, 0.678);
+            }
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            img{
+                object-fit: cover;
+                width: inherit;
+                height: 10rem;
+                transition: all 0.25s ease-in-out;
+            }
+            &:hover img{
+                transform: scale(1.5);
+            }
+        }
+    }
+    .slick-list{
+        box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.301);
+        height: 60rem;
+        overflow: hidden;
+        border-radius: 1rem;
+        margin-bottom: 1rem;
+        &>div{
+            height: inherit;
+            &>div{
+                height: inherit;
+                &>div{
+                    height: inherit;
+                    &>div{
+                        height: inherit;
+                        img{
+                            height: inherit;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .slick-dots{
+        position: static;
+    }
+    &-slide{
+        h2{
+            font-size: 2rem;
+        }
+        width: 40rem;
+    }
+    &-content{
+        font-size: 2rem;
+        width: 100%;
+    }
+    &-title{
+        font-size: 5rem;
+    }
+}
