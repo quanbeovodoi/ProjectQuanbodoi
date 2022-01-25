@@ -6,11 +6,11 @@ import SlideProduct from "../Slide/SlideProduct";
 export const Home = () => {
   return (
     <React.Fragment>
-      {/* slide */}
-      <SlideImg />
-      {/* slide end */}
       <div className="main">
         <div className="main_content">
+          {/* slide */}
+          <SlideImg />
+          {/* slide end */}
           <div className="container">
             {/* cate */}
             <div className="cate_group grid">

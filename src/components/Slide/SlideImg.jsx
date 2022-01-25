@@ -68,7 +68,7 @@ export const SlideImg = () => {
             />
           </Slider>
         </div>
-        <div className="slide_content">
+        <div className="slide_content" >
           <div
             className="buttonSlide_area"
             style={{ padding: "2rem 0 0", textAlign: "center" }}
