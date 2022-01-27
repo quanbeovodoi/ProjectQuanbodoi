@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import HeaderCart from "./HeaderCart";
 import HeaderMobile from "./HeaderMobile";
 
 export const Header = () => {
@@ -8,27 +10,27 @@ export const Header = () => {
       <div className="header_wrap">
         <div className="container flex items-center justify-between">
           {/* logo */}
-          <a href="#">
+          <Link to="/">
             <img className="img-logo" src="/image/logo.png" />
-          </a>
+          </Link>
           {/* end logo */}
           {/* menu */}
           <div className="menu">
             <div className="container flex justify-between menu_links">
               <div className="menu_item">
-                <a href="#">Trang chủ</a>
+              <Link to="/">Trang chủ</Link>
               </div>
               <div className="menu_item">
-                <a href="#">Đồ nam</a>
+                <a href="#">Thể loại</a>
               </div>
               <div className="menu_item">
-                <a href="#">Đồ nữ</a>
+                <a href="#">Blogs</a>
               </div>
               <div className="menu_item">
-                <a>Cửa hàng</a>
+                <a>Sản phẩm</a>
                 <ul className="sub_menu hidden">
                   <li>
-                    <a href="#">Áo Khoác</a>
+                    <Link to="/">Áo Khoác</Link>
                   </li>
                   <li>
                     <a href="#">Áo Dài</a>
@@ -95,24 +97,7 @@ export const Header = () => {
               <div className="icon_title">Wish List</div>
               <span className="icon_number flex">8</span>
             </a>
-            <a className="icon_link transition" href="#">
-              <svg
-                className="w_icon"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
-                />
-              </svg>
-              <div className="icon_title">Cart</div>
-              <span className="icon_number flex -right-3">8</span>
-            </a>
+            <HeaderCart/>
             <a className="icon_link transition" href="#">
               <svg
                 className="w_icon"

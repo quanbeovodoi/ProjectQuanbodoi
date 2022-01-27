@@ -4,11 +4,17 @@ import App from './App';
 import './sass/style.scss'
 import reportWebVitals from './reportWebVitals';
 import SimpleSlider from './components/test';
-import { BrowserRouter } from 'react-router-dom';
+import { Provider } from 'react-redux'
+import { BrowserRouter as Routers } from 'react-router-dom';
+import store from './store';
 ReactDOM.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>,
+  <React.StrictMode>
+    <Routers>
+      <Provider store={store}>
+          <App />
+      </Provider>
+    </Routers>
+  </React.StrictMode>,
   document.getElementById('root')
 );
 

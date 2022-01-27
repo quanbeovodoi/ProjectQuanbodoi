@@ -1,9 +1,22 @@
+.stack-flex{
+    @include screen-lg{
+        flex-direction: column !important;
+    }
+}
 .prdDetails{
-    grid-template-columns: auto auto;
-    gap: 10rem;
+    // grid-template-columns: auto auto;
+    // gap: 10rem;
     padding: 3rem;
-    width: fit-content;
+    width: 60rem;
+    @include screen-lg{
+        width: 100%;
+    }
     margin: 0 auto;
+    &-info{
+        ul{
+            list-style-type: none;
+        }
+    }
     &Dot,img{
         object-fit: cover;
         border-radius: 1rem;
@@ -27,7 +40,7 @@
             img{
                 object-fit: cover;
                 width: inherit;
-                height: 10rem;
+                height: 6rem;
                 transition: all 0.25s ease-in-out;
             }
             &:hover img{
@@ -35,9 +48,16 @@
             }
         }
     }
+    .slick-slider{
+        width: inherit;
+        height: inherit;
+    }
     .slick-list{
         box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.301);
-        height: 60rem;
+        height: 30rem;
+        @include screen-lg{
+            height: 50rem;
+        }
         overflow: hidden;
         border-radius: 1rem;
         margin-bottom: 1rem;
@@ -62,15 +82,20 @@
     }
     &-slide{
         h2{
-            font-size: 2rem;
+            font-size: 1.7rem;
         }
-        width: 40rem;
+        width: 20rem;
+        @include screen-lg{
+            width: 100%;
+        }
     }
     &-content{
-        font-size: 2rem;
+        font-size: 1.5rem;
         width: 100%;
+        gap: 1rem;
+        flex-direction: column;
     }
     &-title{
-        font-size: 5rem;
+        font-size: 3rem;
     }
 }
