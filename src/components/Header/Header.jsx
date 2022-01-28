@@ -27,7 +27,7 @@ export const Header = () => {
                 <a href="#">Blogs</a>
               </div>
               <div className="menu_item">
-                <a>Sản phẩm</a>
+                <Link to="/products/1">Sản phẩm</Link>
                 <ul className="sub_menu hidden">
                   <li>
                     <Link to="/">Áo Khoác</Link>
