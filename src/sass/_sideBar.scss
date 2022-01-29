@@ -1,12 +1,8 @@
 .sidebar{
     margin: 4rem 0;
-    width: 80rem;
+    width: 100%;
     @include screen-xl{
         text-align: center;
-        width:  50rem;
-    }
-    @include screen-lg{
-        width:  26rem;
     }
     @include screen-md{
         width: 100%;
@@ -14,7 +10,6 @@
     }
     height: 100%;
     background: #333;
-    border-radius: 1rem;
     transition: inherit;
     box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.329);
     .menuSideBar{
@@ -23,18 +18,19 @@
             list-style-type: none;
             li{
                 transition: inherit;
+                overflow: hidden;
                 a{
                     display: block;
-                    width: 90%;
+                    width: 100%;
                     font-size: 1.2rem;
                     padding: 1rem;
                     color: #fff;
-                    margin: 1rem auto;
                     transition: inherit;
-                    border-radius: 1rem;
                     &:hover{
-                        transform: scaleY(1.1);
+                        font-size: 1.3rem;
+                        transform: scale(1.05);
                         background:lightcoral;
+                        z-index: 1;
                     }
                 }
             }

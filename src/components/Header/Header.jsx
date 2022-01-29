@@ -27,10 +27,10 @@ export const Header = () => {
                 <a href="#">Blogs</a>
               </div>
               <div className="menu_item">
-                <Link to="/products/1">Sản phẩm</Link>
+                <Link to="/products">Sản phẩm</Link>
                 <ul className="sub_menu hidden">
                   <li>
-                    <Link to="/">Áo Khoác</Link>
+                    <Link to="/products/1">Áo Khoác</Link>
                   </li>
                   <li>
                     <a href="#">Áo Dài</a>

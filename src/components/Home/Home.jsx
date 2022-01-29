@@ -1,9 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import SideBar from "../SideBar/SideBar";
 import { SlideImg } from "../Slide/SlideImg";
 import SlideProduct from "../Slide/SlideProduct";
+import ProductApi from "../../Api/ProductApi";
 
 export const Home = () => {
+  const [products, setProducts] = useState([])
+  const [loading, setLoading] = useState(false)
+  useEffect(() => {
+    const getProducts = async () => {
+      const productItems = await ProductApi.getAll()
+      let data = productItems.data
+      console.log(data)
+      setProducts(data)
+      setLoading(false)
+    }
+    getProducts()
+
+    // return () => {
+    //   setProducts([])
+    // }
+  }, [])
+  // console.log(products)
   return (
     <React.Fragment>
       <div className="main">
@@ -14,13 +32,6 @@ export const Home = () => {
           <div className="container">
             {/* cate */}
             <div className="cate_group grid">
-              <div className="cate_box cols_2 transition">
-                <img
-                  className="transition"
-                  src="./image/clothing-header-image.jpg"
-                />
-                <h4 className="cate_title">Áo Len</h4>
-              </div>
               <div className="cate_box transition">
                 <img
                   className="transition"
@@ -35,7 +46,35 @@ export const Home = () => {
                 />
                 <h4 className="cate_title">Áo Len</h4>
               </div>
+              <div className="cate_box transition">
+                <img
+                  className="transition"
+                  src="./image/clothing-header-image.jpg"
+                />
+                <h4 className="cate_title">Áo Len</h4>
+              </div>
+              <div className="cate_box cols_3 transition">
+                <img
+                  className="transition"
+                  src="./image/clothing-header-image.jpg"
+                />
+                <h4 className="cate_title">Áo Len</h4>
+              </div>
               <div className="cate_box cols_2 transition">
+                <img
+                  className="transition"
+                  src="./image/clothing-header-image.jpg"
+                />
+                <h4 className="cate_title">Áo Len</h4>
+              </div>
+              <div className="cate_box transition">
+                <img
+                  className="transition"
+                  src="./image/clothing-header-image.jpg"
+                />
+                <h4 className="cate_title">Áo Len</h4>
+              </div>
+              <div className="cate_box cols_3 transition">
                 <img
                   className="transition"
                   src="./image/clothing-header-image.jpg"
