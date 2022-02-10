@@ -7,12 +7,14 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import ProductDetail from "./components/Products/ProductDetail";
 import Cart from "./components/Cart/Cart";
 import { useEffect, useState } from "react";
+import Register from "./components/Register/Register";
+import Login from "./components/Login/Login";
 
 function App() {
   const [show, setShow] = useState(true);
 
   useEffect(() => {
-    let timer1 = setTimeout(() => setShow(false), 2000);
+    let timer1 = setTimeout(() => setShow(false), 1000);
     return () => {
       clearTimeout(timer1);
     };
@@ -26,20 +28,6 @@ function App() {
             <div id="spinner" className="spin">
               <div className="loading"></div>
             </div>
-            <div style={{ display: "none" }}>
-              <Header />
-              <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/products" element={<Products />} />
-                <Route
-                  path="/products/:productID"
-                  element={<ProductDetail />}
-                />
-                <Route path="/cart" element={<Cart />} />
-                <Route path="*" element={<Navigate to="/" replace />} />
-              </Routes>
-              <Footer />
-            </div>
           </>
         ) : (
           <>
@@ -47,7 +35,10 @@ function App() {
               <Header />
               <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/home" element={<Home />} />
                 <Route path="/products" element={<Products />} />
+                <Route path="/register" element={<Register />} />
+                <Route path="/login" element={<Login />} />
                 <Route
                   path="/products/:productID"
                   element={<ProductDetail />}

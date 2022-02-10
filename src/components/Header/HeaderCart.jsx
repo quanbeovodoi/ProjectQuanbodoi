@@ -1,12 +1,13 @@
 import React from "react";
 import { useSelector, useDispatch } from 'react-redux';
+import { Link } from "react-router-dom";
 
 function HeaderCart() {
     const cartItems = useSelector((state) => state.cart.cartItems)
     const quantity = cartItems.length
     return (
         <div>
-            <a className="icon_link transition" href="#">
+            <Link className="icon_link transition" to={'/cart'}>
                 <svg
                 className="w_icon"
                 fill="none"
@@ -23,7 +24,7 @@ function HeaderCart() {
                 </svg>
                 <div className="icon_title">Cart</div>
                 <span className="icon_number flex -right-3">{quantity ? quantity : '0'}</span>
-            </a>
+            </Link>
         </div>
     );
 }

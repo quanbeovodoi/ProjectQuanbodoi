@@ -7,11 +7,14 @@ import SimpleSlider from './components/test';
 import { Provider } from 'react-redux'
 import { BrowserRouter as Routers } from 'react-router-dom';
 import store from './store';
+import { SnackbarProvider } from 'notistack';
 ReactDOM.render(
   <React.StrictMode>
     <Routers>
       <Provider store={store}>
+        <SnackbarProvider maxSnack={2}>
           <App />
+        </SnackbarProvider>
       </Provider>
     </Routers>
   </React.StrictMode>,

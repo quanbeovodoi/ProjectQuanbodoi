@@ -34,6 +34,10 @@
 .card{
     &_title{
         font-size: 1.2rem;
+        height: 3rem;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
     &_action{
         width: 100%;

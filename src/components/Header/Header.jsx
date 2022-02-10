@@ -4,7 +4,7 @@ import HeaderCart from "./HeaderCart";
 import HeaderMobile from "./HeaderMobile";
 
 export const Header = () => {
-  const [Open,setOpen] = useState(false);
+  const [Open, setOpen] = useState(false);
   return (
     <header className="header">
       <div className="header_wrap">
@@ -18,30 +18,21 @@ export const Header = () => {
           <div className="menu">
             <div className="container flex justify-between menu_links">
               <div className="menu_item">
-              <Link to="/">Trang chủ</Link>
+                <Link to="/">Trang chủ</Link>
               </div>
               <div className="menu_item">
                 <a href="#">Thể loại</a>
               </div>
               <div className="menu_item">
                 <a href="#">Blogs</a>
+                <ul className="sub_menu hidden">
+                  <li>
+                    <Link to="/products/1">Tin tuc</Link>
+                  </li>
+                </ul>
               </div>
               <div className="menu_item">
                 <Link to="/products">Sản phẩm</Link>
-                <ul className="sub_menu hidden">
-                  <li>
-                    <Link to="/products/1">Áo Khoác</Link>
-                  </li>
-                  <li>
-                    <a href="#">Áo Dài</a>
-                  </li>
-                  <li>
-                    <a href="#">Quần bò</a>
-                  </li>
-                  <li>
-                    <a href="#">Tất chân</a>
-                  </li>
-                </ul>
               </div>
               <div className="menu_item">
                 <a href="#">Giới thiệu</a>
@@ -97,8 +88,8 @@ export const Header = () => {
               <div className="icon_title">Wish List</div>
               <span className="icon_number flex">8</span>
             </a>
-            <HeaderCart/>
-            <a className="icon_link transition" href="#">
+            <HeaderCart />
+            <Link className="icon_link transition" to="/login">
               <svg
                 className="w_icon"
                 fill="none"
@@ -115,8 +106,8 @@ export const Header = () => {
               </svg>
               <div className="icon_title">Account</div>
               <span className="icon_number flex">8</span>
-            </a>
-            <div className="menu_show" onClick={()=>setOpen(!Open)}>
+            </Link>
+            <div className="menu_show" onClick={() => setOpen(!Open)}>
               <div className="menu_icon" id="humber">
                 <div className="menu_humber" />
               </div>
@@ -152,7 +143,7 @@ export const Header = () => {
         </div>
       </div>
       {/* menu mobile */}
-      {Open && <HeaderMobile index={'0'} isOpen={Open} />}
+      {Open && <HeaderMobile index={"0"} isOpen={Open} />}
       {/* end menu mobile */}
     </header>
   );

@@ -23,7 +23,7 @@ function ProductDetailAction(props) {
       const actionTotalPrice = setTotalPrice();
       dispatch(actionTotalPrice);
       const cartItems = JSON.parse(localStorage.getItem('cartItems')) || []
-      console.log(cartItems[0].quantity)
+      console.log(cartItems[0])
       //   enque('Add item in Cart', 'success')
       // const actionPrice = setTotalPrice()
       // dispatch(actionPrice)

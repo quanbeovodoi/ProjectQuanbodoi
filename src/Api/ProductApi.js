@@ -5,8 +5,8 @@ const ProductApi = {
     const urlParam = 'Products.json'
     return requestClient.get(urlParam)
   },
-  getOne(id) {
-    const urlParam = `Products/${id}.json`
+  getCate() {
+    const urlParam = `Products/category_list.json`
     return requestClient.get(urlParam)
   },
   deleteProduct() {},

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import { Button, IconButton } from "@mui/material";
 import Icon from "@mui/material/Icon";
@@ -6,13 +6,28 @@ import { red } from "@mui/material/colors";
 import Stack from "@mui/material/Stack";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import ProductDetailAction from "./ProductDetailAction";
+import { useParams } from "react-router-dom";
+import ProductApi from "../../Api/ProductApi";
+import DataConfig from "../../config/DataConfig";
+import RateStar from "../RateStar/RateStar";
 const ProductDetail = () => {
-  const products = {mainPrice:"100"}
+  const [products, setProducts] = useState([])
+  
+  const productData = [];
+  const [value, setValue] = useState('1')
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue)
+  }
+
+  let { productID } = useParams()
+  DataConfig(productData,productID)
+  // console.log(productData)
   const settings = {
     customPaging: function (i) {
       return (
         <a className="prdDetailsDot">
-          <img src="/image/ao_khoac/aokhoac.jpg" />
+          <img src={productData[0]&&productData[0].p_image} />
         </a>
       );
     },
@@ -25,59 +40,60 @@ const ProductDetail = () => {
     fade: true,
     arrows: false,
   };
+  // useEffect(() => {
+  //   const getProducts = async () => {
+  //     const productItems = await ProductApi.getOne(productID)
+  //     let data = productItems.data
+  //     setProducts(data)
+  //   }
+  //   getProducts()
+
+  //   return () => {
+  //     setProducts([])
+  //   }
+  //  }, [])
+
   return (
     <div>
       <div className="main">
         <div className="main_content">
           <div className="container">
             <div className="prdDetails">
-              <Stack className="stack-flex"
-                style={{flexDirection:'row',gap:'4rem'}}
-              >
+              <Stack className="stack-flex" style={{flexDirection:'row',gap:'4rem'}} >
                 <div className="prdDetails-slide">
                   <h2>Chi tiết sản phẩm</h2>
                   <Slider {...settings}>
                     <div>
-                      <img src="/image/ao_khoac/aokhoac.jpg" />
+                      <img src={productData[0]&&productData[0].p_image} />
                     </div>
                     <div>
-                      <img src="/image/slide/fashion_1.jpg" />
+                      <img src={productData[0]&&productData[0].p_image} />
                     </div>
                     <div>
-                      <img src="/image/ao_khoac/aokhoac.jpg" />
+                      <img src={productData[0]&&productData[0].p_image} />
                     </div>
                     <div>
-                      <img src="/image/ao_khoac/aokhoac.jpg" />
+                      <img src={productData[0]&&productData[0].p_image} />
                     </div>
                   </Slider>
                 </div>
                 <div className="flex prdDetails-content">
-                  <div className="prdDetails-title">Áo khoác Bodoi</div>
+                  <div className="prdDetails-title">{productData[0] && productData[0].p_name}</div>
                   <div className="flex">
-                    <div className="prdDetails-price">100.000 đ</div>
-                    <div className="prdDetails-price card_cross">500.000 đ</div>
+                    <div className="prdDetails-price">{productData[0] && productData[0].p_price}đ</div>
+                    <div className="prdDetails-price card_cross"></div>
                   </div>
                   <div className="rateStars">
-                    <span></span>
+                    <RateStar/>
                   </div>
                   <div className="prdDetails-info">
                     <ul>
                       <li>
-                        <span>Brands: </span>nike
-                      </li>
-                      <li>
-                        <span>Product Code: </span>f1
-                      </li>
-                      <li>
-                        <span>Reward Points: </span>100
-                      </li>
-                      <li>
-                        <span>Stock: </span>
-                        <span className="stock">In Stock</span>
+                        <span>Brands: </span>{productData[0] && productData[0].p_brand}
                       </li>
                     </ul>
                   </div>
-                  <ProductDetailAction product={products} />
+                  <ProductDetailAction product={productData[0]} />
                 </div>
               </Stack>
             </div>

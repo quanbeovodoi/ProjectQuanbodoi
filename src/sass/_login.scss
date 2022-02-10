@@ -1,0 +1,133 @@
+.login {
+  padding: 100px 0px;
+  .container {
+    padding: 0px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-basic {
+    width: 100%;
+    padding: 90px;
+    border: 2px solid #eaedff;
+
+    @include lg {
+      width: 66%;
+    }
+    h3 {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 60px;
+      color: #10111e;
+      font-weight: 500;
+    }
+    h4 {
+      color: #222;
+      font-weight: 400;
+      font-size: 14px;
+      margin-bottom: 5px;
+      margin-top: 20px;
+      span {
+        color: $cl1;
+      }
+    }
+    input {
+      width: 100%;
+      height: 60px;
+      border: 2px solid #eaedff;
+      color: #6f7172;
+      padding: 0 20px;
+    }
+    .error {
+      width: 100%;
+      margin-top: 0.25rem;
+      font-size: 80%;
+      color: #dc3545;
+      height: unset !important;
+      display: unset !important;
+
+      // margin-bottom: 18px;
+    }
+  }
+  &-action {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    overflow: hidden;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-between;
+    @include md {
+      flex-direction: row;
+    }
+    .check {
+      input {
+        width: inherit;
+        height: auto;
+        border: 2px solid #eaedff;
+        color: #6f7172;
+        padding: 0 20px;
+        margin-bottom: 20px;
+        cursor: pointer;
+      }
+      label {
+        display: inline-block;
+        margin-left: 5px;
+        color: #222;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+    span {
+      color: $cl1;
+      font-weight: 400;
+      cursor: pointer;
+      font-size: 14px;
+      transition: all 0.3s ease;
+      &:hover {
+        color: #758799;
+      }
+    }
+  }
+  .btn {
+    border: 0;
+    color: #ffffff;
+    background-color: #84b77c;
+    cursor: pointer;
+    height: unset;
+    padding: 22px 50px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: $cl1;
+    }
+  }
+  &-divide {
+    border-top: 2px solid #eaedff;
+    margin: 40px 0;
+    text-align: center;
+    position: relative;
+    span {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: -9px;
+      background: #fff;
+      display: inline-block;
+      width: 40px;
+      margin: auto;
+      line-height: 1;
+      font-weight: 500;
+      font-size: 14px;
+    }
+  }
+  &-btnregis.btn {
+    width: 100%;
+    background-color: $cl1;
+    &:hover {
+      background-color: #84b77c;
+    }
+  }
+}
