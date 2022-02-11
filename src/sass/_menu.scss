@@ -158,7 +158,7 @@
 }
 .header{
     background: #000000;
-    z-index: 999999;
+    z-index: 3;
     @include screen-min-lg{
         box-shadow: 1px 1px 8px 1px #33333387;
     }

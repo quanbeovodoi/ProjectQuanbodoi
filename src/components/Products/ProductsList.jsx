@@ -41,7 +41,7 @@ const ProductsList = ({ pagenum, limit }) => {
             return (
                 <div className="box" key={index}>
                   <div className="card">
-                    <Link style={{ display: "block" }} to={`/products/${item.p_id}`}>
+                    <Link style={{ display: "block" , height: "100%"}} to={`/products/${item.p_id}`}>
                       <img
                         className="card_image"
                         style={{ width: "100rem" }}

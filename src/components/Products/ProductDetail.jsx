@@ -61,7 +61,6 @@ const ProductDetail = () => {
             <div className="prdDetails">
               <Stack className="stack-flex" style={{flexDirection:'row',gap:'4rem'}} >
                 <div className="prdDetails-slide">
-                  <h2>Chi tiết sản phẩm</h2>
                   <Slider {...settings}>
                     <div>
                       <img src={productData[0]&&productData[0].p_image} />
@@ -82,6 +81,9 @@ const ProductDetail = () => {
                   <div className="flex">
                     <div className="prdDetails-price">{productData[0] && productData[0].p_price}đ</div>
                     <div className="prdDetails-price card_cross"></div>
+                  </div>
+                  <div className="prdDetails-des">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
                   </div>
                   <div className="rateStars">
                     <RateStar/>

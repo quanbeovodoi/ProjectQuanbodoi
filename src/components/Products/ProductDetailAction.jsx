@@ -37,8 +37,9 @@ function ProductDetailAction(props) {
           onClick={handleAddCart}
           variant="contained"
           style={{
-            padding: "1rem",
-            gap: "1rem",
+            fontSize:"0.7rem",
+            padding: "0.5rem",
+            gap: "0.5rem",
             background: "#000",
           }}
         >
@@ -47,8 +48,9 @@ function ProductDetailAction(props) {
         <Button
           variant="contained"
           style={{
-            padding: "1rem",
-            gap: "1rem",
+            fontSize:"0.7rem",
+            padding: "0.5rem",
+            gap: "0.5rem",
             background: "#000",
           }}
           sx={{ color: red[500] }}
