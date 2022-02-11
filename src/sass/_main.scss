@@ -186,7 +186,21 @@ a {
   margin-right: calc(1rem * var(--tw-space-x-reverse));
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
-
+.titlePage{
+  display: block;
+  width: 100%;
+  background: #333;
+  box-shadow: 1px 1px 8px 2px #33333325;
+  h1{
+    text-transform: uppercase;
+    width: fit-content;
+    margin: 0 auto;
+    height: 12rem;
+    line-height: 12rem;
+    color: #292929;
+    font-size: 2rem;
+  }
+}
 .rounded {
   border-radius: 100%;
   &_sm {

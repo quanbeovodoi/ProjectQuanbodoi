@@ -12,7 +12,7 @@ import DataConfig from "../../config/DataConfig";
 import RateStar from "../RateStar/RateStar";
 const ProductDetail = () => {
   const [products, setProducts] = useState([])
-  
+
   const productData = [];
   const [value, setValue] = useState('1')
 
@@ -21,13 +21,13 @@ const ProductDetail = () => {
   }
 
   let { productID } = useParams()
-  DataConfig(productData,productID)
+  DataConfig(productData, productID)
   // console.log(productData)
   const settings = {
     customPaging: function (i) {
       return (
         <a className="prdDetailsDot">
-          <img src={productData[0]&&productData[0].p_image} />
+          <img src={productData[0] && productData[0].p_image} />
         </a>
       );
     },
@@ -57,22 +57,25 @@ const ProductDetail = () => {
     <div>
       <div className="main">
         <div className="main_content">
+        <div className="titlePage" style={{backgroundImage:'url(https://img.freepik.com/free-vector/white-abstract-background_23-2148810113.jpg)',backgroundRepeat:'no-repeat',backgroundSize: 'cover',backgroundPosition:'center'}}>
+          <h1>Chi tiết sản phẩm</h1>
+        </div>
           <div className="container">
             <div className="prdDetails">
-              <Stack className="stack-flex" style={{flexDirection:'row',gap:'4rem'}} >
+              <Stack className="stack-flex" style={{ flexDirection: 'row', gap: '4rem' }} >
                 <div className="prdDetails-slide">
                   <Slider {...settings}>
                     <div>
-                      <img src={productData[0]&&productData[0].p_image} />
+                      <img src={productData[0] && productData[0].p_image} />
                     </div>
                     <div>
-                      <img src={productData[0]&&productData[0].p_image} />
+                      <img src={productData[0] && productData[0].p_image} />
                     </div>
                     <div>
-                      <img src={productData[0]&&productData[0].p_image} />
+                      <img src={productData[0] && productData[0].p_image} />
                     </div>
                     <div>
-                      <img src={productData[0]&&productData[0].p_image} />
+                      <img src={productData[0] && productData[0].p_image} />
                     </div>
                   </Slider>
                 </div>
@@ -83,15 +86,18 @@ const ProductDetail = () => {
                     <div className="prdDetails-price card_cross"></div>
                   </div>
                   <div className="prdDetails-des">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
                   </div>
                   <div className="rateStars">
-                    <RateStar/>
+                    <RateStar />
                   </div>
                   <div className="prdDetails-info">
                     <ul>
                       <li>
-                        <span>Brands: </span>{productData[0] && productData[0].p_brand}
+                        <span>Phân Loại: </span>{productData[0] && productData[0].p_cate}
+                      </li>
+                      <li>
+                        <span>Thương Hiệu: </span>{productData[0] && productData[0].p_brand}
                       </li>
                     </ul>
                   </div>
