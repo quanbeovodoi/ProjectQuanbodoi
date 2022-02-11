@@ -63,7 +63,7 @@ function Login(props) {
     <div className="login">
       <div className="container">
         <div className="login-basic">
-          <h3>Login From Here</h3>
+          <h3>ĐĂNG NHẬP</h3>
           <form onSubmit={handleSubmit(onSubmit)}>
             <h4>
               Username <span>*</span>
@@ -93,19 +93,19 @@ function Login(props) {
                 <input id="remember" type="checkbox" />
                 <label htmlFor="remember">Remember me!</label>
               </span>
-              <span>Lost your password?</span>
+              <span>Quên mật khẩu?</span>
             </div>
 
-            <input type="submit" className="btn" value="Login Now" />
+            <input type="submit" className="btn" value="Đăng Nhập Ngay" />
           </form>
           <div className="login-divide">
-            <span>or</span>
+            <span>OR</span>
           </div>
           <Link to="/register" className="login-btnregis btn">
-            Register Now
+            Đăng ký
           </Link>
           <Link to="/home" className="back-home">
-            <FaArrowLeft /> Back
+            <FaArrowLeft /> Quay lại
           </Link>
         </div>
       </div>

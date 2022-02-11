@@ -84,7 +84,7 @@ const Cart = () => {
                             /details/${item.id}
                           `}
                               >
-                                <img src={item.product.img1} alt="" />
+                                <img src={item.product.p_image} alt="" />
                               </Link>
                             </td>
                             <td>
@@ -93,7 +93,7 @@ const Cart = () => {
                             /details/${item.id}
                           `}
                               >
-                                {item.product.name}
+                                {item.product.p_name}
                               </Link>
                             </td>
                             <td>

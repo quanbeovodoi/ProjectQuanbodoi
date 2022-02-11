@@ -31,11 +31,15 @@ $text1: #10111e;
             vertical-align: middle;
             font-size: 16px;
             img {
+              margin: 0 auto;
               width: 125px;
               object-fit: cover;
               max-width: 100%;
             }
             a {
+              margin: 0 auto;
+              display: block;
+              width: 18rem;
               color: #10111e;
               font-size: 16px;
               font-weight: 400;
@@ -99,6 +103,8 @@ $text1: #10111e;
       }
     }
     &-remove {
+      display: flex;
+      justify-content: center;
       cursor: pointer;
       transition: 0.3s;
       &:hover {

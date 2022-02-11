@@ -93,15 +93,17 @@
   .btn {
     border: 0;
     color: #ffffff;
-    background-color: #84b77c;
+    background-color: #000;
     cursor: pointer;
     height: unset;
     padding: 22px 50px;
-    font-size: 13px;
+    font-size: 1rem;
     font-weight: 600;
     transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-family: inherit;
     &:hover {
-      background-color: $cl1;
+      background-color: rgb(231, 45, 123);
     }
   }
   &-divide {
@@ -124,10 +126,24 @@
     }
   }
   &-btnregis.btn {
+    display: block;
     width: 100%;
-    background-color: $cl1;
+    text-align: center;
+    background-color: #000;
     &:hover {
-      background-color: #84b77c;
+      background-color: rgb(231, 45, 123);
     }
+  }
+}
+.back-home {
+  width: fit-content;
+  margin-top: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: $cl1;
+  transition: all 0.3s ease;
+  &:hover {
+    color: rgb(231, 45, 123);
   }
 }

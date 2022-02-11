@@ -77,7 +77,7 @@ const Register = (props) => {
     <div className="login">
       <div className="container">
         <div className="login-basic">
-          <h3>Signup From Here</h3>
+          <h3>Đăng ký</h3>
           <form onSubmit={handleSubmit(onSubmit)}>
             <h4>
               Username <span>*</span>
@@ -127,14 +127,14 @@ const Register = (props) => {
               style={{ marginTop: "20px" }}
               type="submit"
               className="btn"
-              value="Register Now"
+              value="Đăng Ký Ngay"
             />
           </form>
           <div className="login-divide">
             <span>or</span>
           </div>
           <Link to="/login" className="login-btnregis btn">
-            Login Now
+            Đăng Nhập
           </Link>
         </div>
       </div>
