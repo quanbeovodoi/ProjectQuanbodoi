@@ -151,6 +151,9 @@
     position: relative;
     height: 18rem;
     overflow: hidden;
+    @include screen-lg{
+        grid-column: 1 / span 1;
+    }
     &:hover{
         box-shadow: 1px 2px 4px 5px hsla(0, 100%, 57%, 0.205);
         transform: scale(1.01); 

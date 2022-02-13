@@ -14,7 +14,7 @@ export const Home = () => {
   const [loading, setLoading] = useState(false);
   const productData = [];
   DataConfig(productData)
-  console.log(productData)
+  // console.log(productData)
   // console.log(products)
   return (
     <React.Fragment>
@@ -31,49 +31,28 @@ export const Home = () => {
                   className="transition"
                   src="./image/clothing-header-image.jpg"
                 />
-                <h4 className="cate_title">Áo Len</h4>
+                <h4 className="cate_title">Mua Ngay</h4>
               </div>
               <div className="cate_box transition">
                 <img
                   className="transition"
                   src="./image/clothing-header-image.jpg"
                 />
-                <h4 className="cate_title">Áo Len</h4>
+                <h4 className="cate_title">Mua Ngay</h4>
               </div>
               <div className="cate_box transition">
                 <img
                   className="transition"
                   src="./image/clothing-header-image.jpg"
                 />
-                <h4 className="cate_title">Áo Len</h4>
+                <h4 className="cate_title">Mua Ngay</h4>
               </div>
               <div className="cate_box cols_3 transition">
                 <img
                   className="transition"
                   src="./image/clothing-header-image.jpg"
                 />
-                <h4 className="cate_title">Áo Len</h4>
-              </div>
-              <div className="cate_box cols_2 transition">
-                <img
-                  className="transition"
-                  src="./image/clothing-header-image.jpg"
-                />
-                <h4 className="cate_title">Áo Len</h4>
-              </div>
-              <div className="cate_box transition">
-                <img
-                  className="transition"
-                  src="./image/clothing-header-image.jpg"
-                />
-                <h4 className="cate_title">Áo Len</h4>
-              </div>
-              <div className="cate_box cols_3 transition">
-                <img
-                  className="transition"
-                  src="./image/clothing-header-image.jpg"
-                />
-                <h4 className="cate_title">Áo Len</h4>
+                <h4 className="cate_title">Mua Ngay</h4>
               </div>
             </div>
             {/* cate end */}

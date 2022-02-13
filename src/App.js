@@ -9,6 +9,7 @@ import Cart from "./components/Cart/Cart";
 import { useEffect, useState } from "react";
 import Register from "./components/Register/Register";
 import Login from "./components/Login/Login";
+import WishList from "./components/WishList/WishList";
 
 function App() {
   const [show, setShow] = useState(true);
@@ -44,6 +45,7 @@ function App() {
                   element={<ProductDetail />}
                 />
                 <Route path="/cart" element={<Cart />} />
+                <Route path="/wishlist" element={<WishList />} />
                 <Route path="*" element={<Navigate to="/" replace />} />
               </Routes>
               <Footer />

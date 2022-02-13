@@ -3,7 +3,7 @@
     {
       "p_id": "1",
       "p_brand": "Dell",
-      "p_cate": "Máy vi tính & Laptop",
+      "p_cate": ["Máy vi tính & Laptop"],
       "p_image": "//vn-live-05.slatic.net/p/ab973a529b50491bb63a1253aa6dc7d0.png_720x720q80.jpg_.webp",
       "p_name": "Laptop Dell Inspiron 7400 14.5 inches IPS QHD (Intel / i7-1165G7 / 16GB / 512GB SSD / NVIDIA GeForce MX350, 2GB / Finger Print / Win 10 Home SL) l Silver l DDXGD1 l HÀNG CHÍNH HÃNG",
       "p_number_reviews": "Không có đánh giá",
@@ -18,7 +18,7 @@
     {
       "p_id": "2",
       "p_brand": "HP",
-      "p_cate": "Máy vi tính & Laptop",
+      "p_cate": ["Máy vi tính & Laptop"],
       "p_image": "//vn-live-05.slatic.net/p/0fc9119358dc21cb9dcd30db74fab371.jpg_720x720q80.jpg_.webp",
       "p_name": "Laptop HP ProBook 450 G8 2H0Y1PA (Core i7-1165G7  | 16GB DDR4 | 512GB SSD  | 15 inch FHD | MX450 2GB| Windows 10| Bạc)",
       "p_number_reviews": "Không có đánh giá",
@@ -33,7 +33,7 @@
     {
       "p_id": "3",
       "p_brand": "HP",
-      "p_cate": "Máy vi tính & Laptop",
+      "p_cate": ["Máy vi tính & Laptop"],
       "p_image": "//vn-live-05.slatic.net/p/1063855536ce9dfae5dc18b252c4b95a.jpg_720x720q80.jpg_.webp",
       "p_name": "Laptop HP 14s-fq1080AU 4K0Z7PA (Ryzen 3-5300U | 4GB | 256GB | Radeon Vega | 14 inch HD | Win 10 | Bạc)",
       "p_number_reviews": "1 đánh giá",
@@ -48,7 +48,7 @@
     {
       "p_id": "4",
       "p_brand": "Dell",
-      "p_cate": "Máy vi tính & Laptop",
+      "p_cate": ["Máy vi tính & Laptop"],
       "p_image": "//vn-live-05.slatic.net/p/756f7f7aeb632324816e1e775f8e0159.jpg_720x720q80.jpg_.webp",
       "p_name": "Brand New Dell Alienware M17 R4 - 17.3\" 4K UHD i9-10980HK, 32GB RAM, RTX 3080, 1TB SSD",
       "p_number_reviews": "Không có đánh giá",
@@ -63,7 +63,7 @@
     {
       "p_id": "5",
       "p_brand": "OnePlus",
-      "p_cate": "Máy vi tính & Laptop",
+      "p_cate": ["Điện thoại"],
       "p_image": "//vn-live-05.slatic.net/p/ec69d1bd94b9e41f3f3716edc80706f1.jpg_720x720q80.jpg_.webp",
       "p_name": "Brand New OnePlus 9 Pro - 256GB - Morning Mist (Unlocked) Sealed In Box",
       "p_number_reviews": "Không có đánh giá",
@@ -78,7 +78,7 @@
     {
       "p_id": "6",
       "p_brand": "Dell",
-      "p_cate": "Máy vi tính & Laptop",
+      "p_cate": ["Máy vi tính & Laptop"],
       "p_image": "//vn-live-05.slatic.net/p/fe6a89843afb3c73911e3f396a003965.jpg_720x720q80.jpg_.webp",
       "p_name": "Laptop Dell Inspiron 15 3511 15.6 inches FHD (Intel / i3-1115G4 / 4GB / 256GB SSD / Office HS19 / Win 10 Home SL) l Black l P112F001ABL l HÀNG CHÍNH HÃNG",
       "p_number_reviews": "Không có đánh giá",
@@ -92,8 +92,8 @@
     },
     {
       "p_id": "7",
-      "p_brand": "MAC",
-      "p_cate": "Máy vi tính & Laptop",
+      "p_brand": "Apple",
+      "p_cate": ["Điện thoại"],
       "p_image": "//vn-live-05.slatic.net/p/95c5b168504afd9a05e440764836e22a.jpg_720x720q80.jpg_.webp",
       "p_name": "Brand New AppleiPhone 12 - 128GB - Blue (Unlocked)",
       "p_number_reviews": "Không có đánh giá",
@@ -108,7 +108,7 @@
     {
       "p_id": "8",
       "p_brand": "Microsoft",
-      "p_cate": "Máy vi tính & Laptop",
+      "p_cate": ["Máy vi tính & Laptop"],
       "p_image": "//vn-live-05.slatic.net/p/bee75dd389dd47f2ef25e4cb079dcdb8.jpg_720x720q80.jpg_.webp",
       "p_name": "Brand New Microsoft Surface Book 3 15\" 10th i7 - 32GB RAM 512GB - GTX 1660 Ti - SEALED",
       "p_number_reviews": "Không có đánh giá",
@@ -123,7 +123,7 @@
     {
       "p_id": "9",
       "p_brand": "Dell",
-      "p_cate": "Máy vi tính & Laptop",
+      "p_cate": ["Máy vi tính & Laptop"],
       "p_image": "//vn-live-05.slatic.net/p/a1923f85662bf37637f355922735fcc5.jpg_720x720q80.jpg_.webp",
       "p_name": "Brand New Dell XPS 13 7390 i7-10710U 512GB SSD 16GB RAM Platinum silver Windows 10 Pro",
       "p_number_reviews": "Không có đánh giá",
@@ -138,7 +138,7 @@
     {
       "p_id": "10",
       "p_brand": "HP",
-      "p_cate": "Máy vi tính & Laptop",
+      "p_cate": ["Máy vi tính & Laptop"],
       "p_image": "//vn-live-05.slatic.net/p/6dac1c83a5059915c7a84034d0d41a68.png_720x720q80.jpg_.webp",
       "p_name": "Máy tính xách tay HP 15s-du1105TU, Core i3-10110U,4GB RAM,256GB SSD,Intel Graphics,15.6''HD - Hàng chính hãng - Bảo hành 1 năm",
       "p_number_reviews": "Không có đánh giá",
@@ -153,7 +153,7 @@
     {
       "p_id": "11",
       "p_brand": "No Brand",
-      "p_cate": "Máy vi tính & Laptop",
+      "p_cate": ["Máy vi tính & Laptop"],
       "p_image": "//vn-live-05.slatic.net/p/4536baef82a14deee33554c69f1e11f9.jpg_720x720q80.jpg_.webp",
       "p_name": "Màn hình LCD Dell P2721Q/ 27 inch 4K/ USB Type C/ 3Yrs",
       "p_number_reviews": "Không có đánh giá",
@@ -168,7 +168,7 @@
     {
       "p_id": "12",
       "p_brand": "MAC",
-      "p_cate": "Máy vi tính & Laptop",
+      "p_cate": ["Máy vi tính & Laptop"],
       "p_image": "//vn-live-05.slatic.net/p/a36a6c7988a2a99ca05b4c00771b2e8f.jpg_720x720q80.jpg_.webp",
       "p_name": "Brand New 2019 AppleMacBook Pro 16” Retina Display 2.3GHz Core i9 AMD Radeon Pro 5500M 16GB 1TB SSD Silver",
       "p_number_reviews": "Không có đánh giá",
@@ -183,7 +183,7 @@
     {
       "p_id": "13",
       "p_brand": "Toshiba",
-      "p_cate": "Máy vi tính & Laptop",
+      "p_cate": ["Máy vi tính & Laptop"],
       "p_image": "//vn-live-05.slatic.net/p/101319cd821e7c28bfb12d773d6d57a1.jpg_720x720q80.jpg_.webp",
       "p_name": "[Xả Hàng] Toshiba Dynabook R731 (Portege R830) Máy tính xách tay  Chíp i5 mạnh mẽ Laptop Gaming cũ giá rẻ Ổ SSD mới cho tốc độ xử lý nhanh trọng lượng máy nhẹ chỉ 1,3kg tiện dụng máy tín",
       "p_number_reviews": "45 đánh giá",
@@ -198,7 +198,7 @@
     {
       "p_id": "14",
       "p_brand": "Microsoft",
-      "p_cate": "Máy vi tính & Laptop",
+      "p_cate": ["Điện thoại"],
       "p_image": "//vn-live-05.slatic.net/p/ec29947c877675e4334380113082d1a4.jpg_720x720q80.jpg_.webp",
       "p_name": "Brand New Microsoft Surface Pro X SQ2 - 16GB Go RAM 512GB SSD Platinum",
       "p_number_reviews": "Không có đánh giá",
@@ -213,7 +213,7 @@
     {
       "p_id": "15",
       "p_brand": "MSI",
-      "p_cate": "Máy vi tính & Laptop",
+      "p_cate": ["Máy vi tính & Laptop"],
       "p_image": "//vn-live-05.slatic.net/p/f8bd8136173411440149b56d323794e5.jpg_720x720q80.jpg_.webp",
       "p_name": "Brand New MSI GS75 Stealth 9SG-1074US 17.3\" 32GB RAM 1TB SSD, Intel Core i7-9750H RTX2080",
       "p_number_reviews": "Không có đánh giá",
@@ -228,7 +228,7 @@
     {
       "p_id": "16",
       "p_brand": "ASUS",
-      "p_cate": "Máy vi tính & Laptop",
+      "p_cate": ["Máy vi tính & Laptop"],
       "p_image": "//vn-live-05.slatic.net/p/80424c6a149763e3af3fbf5c77a70ed0.jpg_720x720q80.jpg_.webp",
       "p_name": "Brand New ASUS Zenbook Pro Duo UX581 15.6\" Touchscreen (i9-10980HK) 4K UHD 32GB  2TB SSD",
       "p_number_reviews": "Không có đánh giá",
@@ -243,7 +243,7 @@
     {
       "p_id": "17",
       "p_brand": "Microsoft",
-      "p_cate": "Máy vi tính & Laptop",
+      "p_cate": ["Máy vi tính & Laptop"],
       "p_image": "//vn-live-05.slatic.net/p/b3400837f43045d48afb9f72d9bc62d7.png_720x720q80.jpg_.webp",
       "p_name": "Surface pro 7 12.3 inch chính hãng Microsoft core i5/8gb/128gb mới 100%",
       "p_number_reviews": "Không có đánh giá",
@@ -258,7 +258,7 @@
     {
       "p_id": "18",
       "p_brand": "HP",
-      "p_cate": "Máy vi tính & Laptop",
+      "p_cate": ["Máy vi tính & Laptop"],
       "p_image": "//vn-live-05.slatic.net/p/a865cd7e91fbec3f99aab60f1ea4dbe9.jpg_720x720q80.jpg_.webp",
       "p_name": "HP Elitebook 830 G5, Laptop Văn Phòng Vỏ Nhôm Cao Cấp, i5- 8250U, RAM 8G, SSD NVMe 256G, VGA Intel UHD 620, Màn 13.3 Full HD IPS",
       "p_number_reviews": "Không có đánh giá",
@@ -273,7 +273,7 @@
     {
       "p_id": "19",
       "p_brand": "OEM",
-      "p_cate": "Máy vi tính & Laptop",
+      "p_cate": ["Máy vi tính & Laptop"],
       "p_image": "//vn-live-05.slatic.net/p/7dcd92692d33f41f0be127cb5520e0f3.jpg_720x720q80.jpg_.webp",
       "p_name": "[HCM]Laptop Lenovo Thinkpad X1 Carbon Gen4 i7 thệ hệ 6",
       "p_number_reviews": "Không có đánh giá",
@@ -288,7 +288,7 @@
     {
       "p_id": "20",
       "p_brand": "MAC",
-      "p_cate": "Máy vi tính & Laptop",
+      "p_cate": ["Máy vi tính & Laptop"],
       "p_image": "//vn-live-05.slatic.net/p/2e5f789f0203232b1832412e420ba309.jpg_720x720q80.jpg_.webp",
       "p_name": "Brand New AppleMacBook Air 13\" M1 chip (256 Go SSD, 8 Go RAM) - Silver",
       "p_number_reviews": "Không có đánh giá",
@@ -303,7 +303,7 @@
     {
       "p_id": "21",
       "p_brand": "HP",
-      "p_cate": "Máy vi tính & Laptop",
+      "p_cate": ["Máy vi tính & Laptop"],
       "p_image": "//vn-live-05.slatic.net/p/a865cd7e91fbec3f99aab60f1ea4dbe9.jpg_720x720q80.jpg_.webp",
       "p_name": "HP Elitebook 840 G5, Bảo Mật Vân Tay, Mỏng Nhẹ Sang Chảnh, i7-7600U, VGA Intel UHD 620, Màn 14 FullHD IPS, 88% sRGB",
       "p_number_reviews": "Không có đánh giá",
@@ -318,7 +318,7 @@
     {
       "p_id": "22",
       "p_brand": "Dell",
-      "p_cate": "Máy vi tính & Laptop",
+      "p_cate": ["Máy vi tính & Laptop"],
       "p_image": "//vn-live-05.slatic.net/p/8b0c8945567fa0561975ea1876796557.jpg_720x720q80.jpg_.webp",
       "p_name": "Dell Inspiron 5402 i5-1135G7/ RAM 8GB/ SSD 512GB/ Intel Iris Xe Graphics/ 14 inch",
       "p_number_reviews": "Không có đánh giá",
@@ -333,7 +333,7 @@
     {
       "p_id": "23",
       "p_brand": "Razer",
-      "p_cate": "Máy vi tính & Laptop",
+      "p_cate": ["Máy vi tính & Laptop"],
       "p_image": "//vn-live-05.slatic.net/p/3604e33af79eb54dfe9312f097e5cda6.jpg_720x720q80.jpg_.webp",
       "p_name": "Brand New Razer Blade Pro 17 Laptop D17 Core i7-10875H 2.6GHz RTX 3080 32GB RAM 1TB SSD",
       "p_number_reviews": "Không có đánh giá",
@@ -348,7 +348,7 @@
     {
       "p_id": "24",
       "p_brand": "Dell",
-      "p_cate": "Máy vi tính & Laptop",
+      "p_cate": ["Máy vi tính & Laptop"],
       "p_image": "//vn-live-05.slatic.net/p/80c96e306a9ec42482f91cc94e9966f5.jpg_720x720q80.jpg_.webp",
       "p_name": "[Mới 100% New Seal] Dell Inspiron 15 3511 ( Core i3-1115G4, Ram 4G, ssd 128G, Màn 15.6 FHD IPS )",
       "p_number_reviews": "Không có đánh giá",
@@ -363,7 +363,7 @@
     {
       "p_id": "25",
       "p_brand": "Dell",
-      "p_cate": "Máy vi tính & Laptop",
+      "p_cate": ["Máy vi tính & Laptop"],
       "p_image": "//vn-live-05.slatic.net/p/d306c105f0a1ccc1f2b2a5862a394083.jpg_720x720q80.jpg_.webp",
       "p_name": "[Trả góp 0%]Laptop Dell Latitude E7270 core i5 tặng cặp chuột add sẵn 2 phần mềm tienganh123 luyenthi123 bản quyền",
       "p_number_reviews": "Không có đánh giá",
@@ -378,7 +378,7 @@
     {
       "p_id": "26",
       "p_brand": "Microsoft",
-      "p_cate": "Máy vi tính & Laptop",
+      "p_cate": ["Máy vi tính & Laptop"],
       "p_image": "//vn-live-05.slatic.net/p/be528a4b1087cc342591ef9d4db6de8c.jpg_720x720q80.jpg_.webp",
       "p_name": "Brand New Microsoft Surface Go 2 10.5\" Intel Pentium 8GB RAM 128GB SSD - GOLD",
       "p_number_reviews": "Không có đánh giá",
@@ -393,7 +393,7 @@
     {
       "p_id": "27",
       "p_brand": "Dell",
-      "p_cate": "Máy vi tính & Laptop",
+      "p_cate": ["Máy vi tính & Laptop"],
       "p_image": "//vn-live-05.slatic.net/p/e37afcc23601e37cadf1550ec62721a1.jpg_720x720q80.jpg_.webp",
       "p_name": "Dell Latitude 6530 Card Rời, i5-3210M, RAM 4G, SSD 128G, VGA NVIDIA Quadro NVS 5200M-1G, Màn 15.6 Full HD",
       "p_number_reviews": "Không có đánh giá",
@@ -408,7 +408,7 @@
     {
       "p_id": "28",
       "p_brand": "Dell",
-      "p_cate": "Máy vi tính & Laptop",
+      "p_cate": ["Máy vi tính & Laptop"],
       "p_image": "//vn-live-05.slatic.net/p/f3d29754f3ce64b927037df8e0119eff.jpg_720x720q80.jpg_.webp",
       "p_name": "DELL XPS 9560 Core i7-7700HQ l RAM 16G l SSD 256G l GTX 1050M l Màn 15' 4k [ BẢO HÀNH 1 - 12 THÁNG ] HÀNG ĐẸP 99%",
       "p_number_reviews": "Không có đánh giá",

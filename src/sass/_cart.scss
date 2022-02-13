@@ -1,195 +1,262 @@
 $cl1: #fe4536;
 $text1: #10111e;
 .cart {
-    padding: 100px 0;
-    @include xs {
-      padding: 100px 15px;
-    }
-    &-table {
-      overflow-x: auto;
-      table {
-        background: #fff;
+  padding: 100px 0;
+  @include xs {
+    padding: 100px 15px;
+  }
+  &-table {
+    overflow-x: auto;
+    table {
+      background: #fff;
+      border: 1px solid #eaedff;
+      text-align: center;
+      width: 100%;
+      margin-bottom: 0;
+      border-collapse: collapse;
+      th,
+      td,
+      tr {
         border: 1px solid #eaedff;
-        text-align: center;
-        width: 100%;
-        margin-bottom: 0;
-        border-collapse: collapse;
-        th,
-        td,
-        tr {
-          border: 1px solid #eaedff;
-        }
-        thead {
-          th {
-            padding: 10px;
-            font-size: 14px;
-          }
-        }
-        tbody {
-          td {
-            padding: 20px 10px;
-            vertical-align: middle;
-            font-size: 16px;
-            img {
-              margin: 0 auto;
-              width: 125px;
-              object-fit: cover;
-              max-width: 100%;
-            }
-            a {
-              margin: 0 auto;
-              display: block;
-              width: 18rem;
-              color: #10111e;
-              font-size: 16px;
-              font-weight: 400;
-            }
-            span {
-              font-size: 16px;
-              font-weight: 400;
-            }
-          }
-        }
       }
-    }
-    &-func {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      display: inline-block;
-      position: relative;
-      p {
-        height: 50px;
-        width: 160px;
-        text-align: center;
-        appearance: none;
-        background: #fff1f0;
-        border-radius: 30px;
-        font-weight: 500;
-        color: #747691;
-        font-size: 16px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      > div {
-        position: absolute;
-        font-size: 20px;
-        color: #c4bedd;
-        cursor: pointer;
-        line-height: 1;
-        top: 5px;
-        width: 40px;
-        height: 40px;
-        background: #fff;
-        font-size: 16px;
-        text-align: center;
-        line-height: 40px;
-        font-weight: 500;
-        border-radius: 50%;
-        transition: 0.3s;
-        &:hover {
-          background-color: $cl1;
-          color: #ffffff;
-        }
-      }
-      &__decrease {
-        top: 5px;
-        left: 5px;
-      }
-      &__increase {
-        left: auto;
-        right: 5px;
-      }
-    }
-    &-remove {
-      display: flex;
-      justify-content: center;
-      cursor: pointer;
-      transition: 0.3s;
-      &:hover {
-        color: $cl1;
-      }
-    }
-    &-coupon {
-      margin-top: 50px;
-      display: flex;
-      justify-content: space-between;
-      &__coupon {
-        input {
-          height: 57px;
-          border: 2px solid #eaedff;
-          padding: 0 15px;
-          margin-right: 10px;
+      thead {
+        th {
+          padding: 10px;
           font-size: 14px;
         }
-        button {
-          cursor: pointer;
-          font-weight: 600;
-          font-size: 13px;
-          @include xs {
-            margin-top: 10px;
-            padding: 22px 40px;
-          }
-          &:hover {
-            background: #84b77c;
-            color: #fff;
-          }
-        }
       }
-      &__coupon2 {
-        .btn {
-          cursor: pointer;
-          font-weight: 600;
-          font-size: 12px;
-          &:hover {
-            background: #84b77c;
-            color: #fff;
+      tbody {
+        td {
+          padding: 20px 10px;
+          vertical-align: middle;
+          font-size: 16px;
+          img {
+            margin: 0 auto;
+            width: 125px;
+            object-fit: cover;
+            max-width: 100%;
+          }
+          a {
+            margin: 0 auto;
+            display: block;
+            width: 18rem;
+            color: #10111e;
+            font-size: 16px;
+            font-weight: 400;
+          }
+          span {
+            font-size: 16px;
+            font-weight: 400;
           }
         }
       }
     }
-    &-checkout {
-      padding-top: 50px;
-      @include md {
-        width: 40%;
-        margin-left: auto;
+  }
+  &-func {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    position: relative;
+    p {
+      height: 50px;
+      width: 160px;
+      text-align: center;
+      appearance: none;
+      background: #fff1f0;
+      border-radius: 30px;
+      font-weight: 500;
+      color: #747691;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    > div {
+      position: absolute;
+      font-size: 20px;
+      color: #c4bedd;
+      cursor: pointer;
+      line-height: 1;
+      top: 5px;
+      width: 40px;
+      height: 40px;
+      background: #fff;
+      font-size: 16px;
+      text-align: center;
+      line-height: 40px;
+      font-weight: 500;
+      border-radius: 50%;
+      transition: 0.3s;
+      &:hover {
+        background-color: $cl1;
+        color: #ffffff;
       }
-      h2 {
-        font-size: 25px;
-        margin-bottom: 20px;
-        text-transform: capitalize;
+    }
+    &__decrease {
+      top: 5px;
+      left: 5px;
+    }
+    &__increase {
+      left: auto;
+      right: 5px;
+    }
+  }
+  &-remove {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      color: $cl1;
+    }
+  }
+  &-coupon {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    &__coupon {
+      input {
+        height: 57px;
+        border: 2px solid #eaedff;
+        padding: 0 15px;
+        margin-right: 10px;
+        font-size: 14px;
       }
-      ul {
-        border: 1px solid #eaedff;
-        margin-bottom: 20px;
-        li {
-          list-style: none;
-          font-size: 15px;
-          color: #6f7172;
-          padding: 10px 30px;
-          border-bottom: 1px solid #eaedff;
-          font-weight: 400;
-          span {
-            float: right;
-          }
-        }
-      }
-      .btn {
+      button {
         cursor: pointer;
+        font-weight: 600;
         font-size: 13px;
-        padding: 22px 40px;
+        @include xs {
+          margin-top: 10px;
+          padding: 22px 40px;
+        }
         &:hover {
           background: #84b77c;
           color: #fff;
         }
       }
     }
-    .pro-nof {
-      text-align: center;
-      padding-top: 100px;
-      padding-bottom: 50px;
-      font-size: 35px;
-      font-weight: 500;
+    &__coupon2 {
+      .btn {
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 12px;
+        &:hover {
+          background: #84b77c;
+          color: #fff;
+        }
+      }
     }
   }
+  &-checkout {
+    padding-top: 50px;
+    @include md {
+      width: 40%;
+      margin-left: auto;
+    }
+    h2 {
+      font-size: 25px;
+      margin-bottom: 20px;
+      text-transform: capitalize;
+    }
+    ul {
+      border: 1px solid #eaedff;
+      margin-bottom: 20px;
+      li {
+        list-style: none;
+        font-size: 15px;
+        color: #6f7172;
+        padding: 10px 30px;
+        border-bottom: 1px solid #eaedff;
+        font-weight: 400;
+        span {
+          float: right;
+        }
+      }
+    }
+    .btn {
+      cursor: pointer;
+      font-size: 13px;
+      padding: 22px 40px;
+      &:hover {
+        background: #84b77c;
+        color: #fff;
+      }
+    }
+  }
+  .pro-nof {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    font-size: 35px;
+    font-weight: 500;
+  }
+}
+.table {
+  padding: 100px 15px;
+  .pro-nof {
+    font-weight: 500;
+    font-size: 35px;
+    text-align: center;
+    padding: 50px 0px;
+  }
+  &-content {
+    overflow-x: auto;
+  }
+  table {
+    overflow-x: auto;
+    background: #fff;
+    border: 1px solid #eaedff;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0;
+    border-collapse: collapse;
+    th,
+    td,
+    tr {
+      border: 1px solid #eaedff;
+    }
+    thead {
+      th {
+        padding: 10px;
+        font-size: 14px;
+      }
+    }
+    tbody {
+      td {
+        padding: 20px 10px;
+        vertical-align: middle;
+        font-size: 16px;
+        img {
+          margin: 0 auto;
+          width: 125px;
+          object-fit: cover;
+          max-width: 100%;
+        }
+        a {
+          margin: 0 auto;
+          display: block;
+          width: 18rem;
+          color: #10111e;
+          font-size: 16px;
+          font-weight: 400;
+        }
+        span {
+          font-size: 16px;
+          font-weight: 400;
+        }
+      }
+      .btn-add {
+        cursor: pointer;
+        background-color: #84b77c;
+        transition: all 0.3s ease;
+        min-width: 150px;
+        padding: 22px;
+        &:hover {
+          background-color: $cl1;
+        }
+      }
+    }
+  }
+}

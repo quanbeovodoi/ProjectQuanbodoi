@@ -1,15 +1,48 @@
 import { Button, Icon } from "@mui/material";
 import { red } from "@mui/material/colors";
-import React from "react";
+import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { useParams } from "react-router-dom";
 import { addToCart, setTotalPrice } from "../../Slice/CartSlice";
 import FavoriteIcon from "@mui/icons-material/Favorite";
+import { addToWishList } from '../../Slice/WishListSlice'
+import { useSnackbar } from "notistack";
+
+
 function ProductDetailAction(props) {
+  const [addWish, setAddWish] = useState(false)
+  const { enqueueSnackbar } = useSnackbar()
+
   const { product } = props;
   let { productID } = useParams();
   
   const dispatch = useDispatch();
+
+  const enque = (message, status) => {
+    enqueueSnackbar(message, {
+      anchorOrigin: {
+        vertical: 'top',
+        horizontal: 'left',
+      },
+      autoHideDuration: 2000,
+      variant: status,
+      // TransitionComponent: Grow,
+    })
+  }
+  const handleClickWishList = () => {
+    if (product.length !== 0) {
+      const itemData = {
+        product: product,
+        id: productID,
+        quantity: 1,
+      }
+      // console.log(itemData)
+      const actionWishList = addToWishList(itemData)
+      dispatch(actionWishList)
+      enque('Successfully add item in wishlist.', 'success')
+      setAddWish(!addWish)
+    }
+  }
 
   const handleAddCart = () => {
     if (product !== null) {
@@ -46,6 +79,7 @@ function ProductDetailAction(props) {
           Thêm vào giỏ <Icon sx={{ color: red[500] }}>add_circle</Icon>
         </Button>
         <Button
+        onClick={handleClickWishList}
           variant="contained"
           style={{
             fontSize:"0.7rem",
