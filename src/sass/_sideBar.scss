@@ -1,35 +1,64 @@
-.sidebar{
+.sidebar {
+    max-width: 28rem;
+    @include screen-lg{
+        max-width: none;
+    }
     margin: 4rem 0;
     width: 100%;
-    @include screen-xl{
+    color: #ede8ff;
+    &-box {
+        border: 4px solid #f9f9f9;
+        width: 100%;
+        height: 100%;
+        padding: 35px 40px;
+    }
+    &-category {
+        h3 {
+            font-size: 20px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+        &-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            text-align: left;
+        }
+        border-bottom: 2px dashed #ede8ff;
+        margin-top: 40px;
+        padding-bottom: 30px;
+    }
+    @include screen-xl {
         text-align: center;
     }
-    @include screen-md{
+    @include screen-md {
         width: 100%;
         margin: 2rem 0 0;
     }
     height: 100%;
-    background: #333;
+    background: rgb(117, 117, 117);
     transition: inherit;
     box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.329);
-    .menuSideBar{
-        ul{
+    .menuSideBar {
+        ul {
             transition: inherit;
             list-style-type: none;
-            li{
+            li {
                 transition: inherit;
                 overflow: hidden;
-                a{
+                a {
                     display: block;
                     width: 100%;
                     font-size: 1.2rem;
                     padding: 1rem;
                     color: #fff;
                     transition: inherit;
-                    &:hover{
+                    &:hover {
                         font-size: 1.3rem;
                         transform: scale(1.05);
-                        background:lightcoral;
+                        background: lightcoral;
                         z-index: 1;
                     }
                 }
@@ -37,9 +66,9 @@
         }
     }
 }
-.product_items{
+.product_items {
     gap: 2rem;
-    @include screen-md{
+    @include screen-md {
         flex-direction: column;
         gap: 0;
     }

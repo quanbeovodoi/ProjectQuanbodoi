@@ -10,6 +10,8 @@ import { useEffect, useState } from "react";
 import Register from "./components/Register/Register";
 import Login from "./components/Login/Login";
 import WishList from "./components/WishList/WishList";
+import Shop from "./components/Shop/Shop";
+import ShopFilter from "./components/Shop/ShopFilter";
 
 function App() {
   const [show, setShow] = useState(true);
@@ -40,6 +42,8 @@ function App() {
                 <Route path="/products" element={<Products />} />
                 <Route path="/register" element={<Register />} />
                 <Route path="/login" element={<Login />} />
+                <Route path="/shop" element={<Shop />} />
+                <Route path="/shop/filter/:id" element={<ShopFilter />} />
                 <Route
                   path="/products/:productID"
                   element={<ProductDetail />}

@@ -4,10 +4,10 @@ import ProductApi from "../../Api/ProductApi";
 import DataConfig from "../../config/DataConfig";
 import Paginations from "../Pagination/Pagination";
 
-const ProductsList = ({ pagenum, limit }) => {
+const ProductsList = ({ pagenum, limit ,pagestart,update}) => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [currentPage, setCurrentPage] = useState(1);
+  const [currentPage, setCurrentPage] = useState(pagestart);
   // console.log(pagenum);
   const [productPerPage] = useState(pagenum);
   const productData = [];
@@ -18,7 +18,8 @@ const ProductsList = ({ pagenum, limit }) => {
     indexOfFirstProducts,
     indexOfLastProducts
   );
-  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+  let paginate = null
+  paginate = (pageNumber) => setCurrentPage(pageNumber);
   const paginateShow = ()=>{
     if (limit == false) {
       return (

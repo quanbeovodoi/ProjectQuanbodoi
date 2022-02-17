@@ -6,12 +6,12 @@ const DataConfig = (productData, id) => {
   const [loading, setLoading] = useState(false);
   const [products, setProducts] = useState([]);
   let sortCategory = useSelector((state) => state.sort.category);
-  let newArr = [];
+  let newData = [];
   useEffect(() => {
     const getProducts = async () => {
       const productItems = await ProductApi.getAll();
       let data = productItems.data;
-      newArr = [...data]
+      newData = [...data]
       // setProducts(data);
       setLoading(false);
       //Filter brand
@@ -20,9 +20,9 @@ const DataConfig = (productData, id) => {
           (!sortCategory.length ||
             sortCategory.some((ai) => item.p_cate.indexOf(ai) >= 0))
       )
-      newArr = [...list]
-      setProducts(newArr);
-      console.log(newArr)
+      newData = [...list]
+      setProducts(newData);
+      // console.log(newData)
     };
     getProducts();
     // return () => {

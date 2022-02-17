@@ -8,7 +8,7 @@ import ProductsList from "../Products/ProductsList";
 import { Link } from "react-router-dom";
 import DataConfig from "../../config/DataConfig";
 import Cart from "../Cart/Cart";
-
+let pageStart = 1;
 export const Home = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -65,7 +65,7 @@ export const Home = () => {
             <div className="flex product_items">
               <SideBar />
               <div>
-                <ProductsList pagenum={8} limit={true}/>
+                <ProductsList pagenum={8} limit={true} pagestart={pageStart} update={false}/>
                 <div className="more">
                   <Link to="/products" className="Button transition">
                     Xem Thêm

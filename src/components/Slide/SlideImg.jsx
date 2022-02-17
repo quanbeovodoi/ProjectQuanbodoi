@@ -49,7 +49,7 @@ export const SlideImg = () => {
             <CustomSlide
               index={3}
               link="image/slide/fashion_3.jpg"
-              text="Hưng ăn cức"
+              text="Chào mừng đến với Qshopping"
             />
             <CustomSlide
               index={4}
@@ -64,7 +64,7 @@ export const SlideImg = () => {
             <CustomSlide
               index={6}
               link="image/slide/fashion_6.jpg"
-              text="Tu tiên"
+              text="Chào mừng đến với Qshopping"
             />
           </Slider>
         </div>

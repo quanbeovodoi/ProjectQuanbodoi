@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux'
 import ProductApi from '../../Api/ProductApi'
 import { sortCategory } from '../../Slice/ProductSortSlice'
+import { pageStart } from './Products'
 
 const ProductCategoryFilter = (props) => {
     let arrCategory = []
@@ -28,9 +29,8 @@ const ProductCategoryFilter = (props) => {
     const handleValue = (e) => {
       if (e.target.checked) {
         arrCategory.push(e.target.value)
-        console.log('oki')
       }
-  
+      
       if (!e.target.checked) {
         arrCategory.splice(arrCategory.indexOf(e.target.value), 1)
       }
@@ -44,6 +44,7 @@ const ProductCategoryFilter = (props) => {
     return (
       <div className="sidebar-category">
         <h3>PRODUCT Category</h3>
+        <div className='sidebar-category-container'>
         {getCategory &&
           getCategory.map((val, index) => {
             return (
@@ -57,6 +58,7 @@ const ProductCategoryFilter = (props) => {
               </div>
             )
           })}
+          </div>
       </div>
     )
 }
